@@ -5,6 +5,12 @@ export default {
 		'./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
 		'./node_modules/@tailus/themer-**/dist/**/*.{js,ts}'
 	],
+	darkMode:"class",
+	safelist: [
+		{
+			pattern: /(bg|text)-(gray|primary|secondary|accent)-(50|100|200|300|400|500|600|700|800|900|950)/,
+		},
+	],
 	theme: {
 		extend: {
 			colors: ({ colors }) => ({
@@ -26,6 +32,7 @@ export default {
 		themer({
 			// ... your themer config
 			background: "lighter",
+			border:"lighter",
 			radius: "smooth",
 			shadow: {
 				size: "md",

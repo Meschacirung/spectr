@@ -11,12 +11,19 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.3.4",
+    "@astrojs/react": "^3.0.9",
     "@astrojs/tailwind": "^5.1.0",
+    "@radix-ui/react-tooltip": "^1.0.7",
     "@tailus/themer": "^0.0.4",
     "@tailus/themer-button": "^0.0.2",
     "@tailus/themer-card": "^0.0.1",
     "@tailus/themer-form": "^0.0.1",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
     "astro": "^4.1.1",
+    "framer-motion": "^10.18.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3"
   }
