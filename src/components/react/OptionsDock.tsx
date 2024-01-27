@@ -35,7 +35,7 @@ export function OptionsDock() {
     <motion.div
       onMouseMove={(e) => mouseX.set(e.pageX)}
       onMouseLeave={() => mouseX.set(Infinity)}
-      className="mx-auto flex h-[3.6rem] w-fit gap-1.5 ring-1 ring-white/50 dark:ring-gray-900/50 items-end pb-1.5 px-1.5 border border-gray-950/10 rounded-2xl shadow-md shadow-gray-950/5 bg-white/75 dark:bg-gray-900/50 backdrop-blur-2xl dark:border-white/10"
+      className="mx-auto flex h-[3.6rem] w-fit gap-1.5 ring-1 ring-gray-950/10 dark:ring-gray-900/50 items-end pb-1.5 px-1.5 border border-white/10 rounded-2xl shadow-md shadow-gray-950/5 bg-white/10 dark:bg-gray-900/25 backdrop-blur-2xl dark:border-white/10"
       >
           <AppIcon mouseX={mouseX} tooltip="Home">
               <svg className="relative size-full transition duration-300 text-gray-950 dark:text-white" width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -127,13 +127,13 @@ const AppIcon:React.FC<AppIconProps> = ({ mouseX, tooltip, children, ...props })
                     ref={ref}
                     style={{ width }}
                     {...props}
-                    className={`aspect-square group w-10 p-2.5 overflow-hidden bg-white flex items-center rounded-lg shadow shadow-gray-950/5 dark:shadow-inner dark:shadow-white/0 justify-center group relative before:absolute before:inset-0 before:rounded-[7px] before:border-t before:border-t-white dark:before:border-t-white/10 before:bg-gradient-to-b before:from-gray-50 dark:before:from-white/0 dark:ring ring-gray-50 border dark:ring-gray-950/5 dark:bg-gray-800 dark:border-gray-800 hover:before:from-gray-100 dark:hover:before:from-white/5`}
+                    className={`aspect-square group w-10 p-2.5 overflow-hidden bg-white/50 backdrop-blur-xl flex items-center rounded-lg shadow shadow-gray-950/5 dark:shadow-inner dark:shadow-white/0 justify-center group relative before:absolute before:inset-0 before:rounded-[7px] before:border-t before:border-t-white dark:before:border-t-white/10 before:bg-gradient-to-b before:from-gray-50 dark:before:from-white/0 dark:ring ring-gray-50 border dark:ring-gray-950/5 dark:bg-gray-800 dark:border-gray-800 hover:before:from-gray-100 dark:hover:before:from-white/5`}
             >
                 {children}
                 </motion.button>  
             </Tooltip.Trigger>
         <Tooltip.Portal>
-                    <Tooltip.Content sideOffset={6} className="relative z-50 text-xs px-2 py-1.5 border shadow shadow-gray-500/5 border-gray-950/10 dark:border-white/10 rounded-lg text-gray-700 dark:text-gray-300 dark:bg-gray-800/50 backdrop-blur-2xl">
+                    <Tooltip.Content sideOffset={6} className="relative z-50 text-xs px-2 py-1.5 border shadow shadow-gray-500/5 border-gray-950/10 dark:border-white/10 rounded-lg text-gray-950 dark:text-white bg-white/75 dark:bg-gray-800/50 backdrop-blur-2xl">
                         {tooltip}
             </Tooltip.Content>
         </Tooltip.Portal>
