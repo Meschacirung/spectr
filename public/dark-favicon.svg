@@ -1,8 +1,8 @@
 <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="40" cy="31" r="5" fill="white" style="fill:white;fill-opacity:1;"/>
 <circle cx="59" cy="31" r="5" fill="white" style="fill:white;fill-opacity:1;"/>
-<circle cx="40" cy="50" r="5" fill="white" style="fill:white;fill-opacity:1;"/>
-<circle cx="59" cy="50" r="5" fill="white" style="fill:white;fill-opacity:1;"/>
-<circle cx="40" cy="69" r="5" fill="white" style="fill:white;fill-opacity:1;"/>
-<circle cx="59" cy="69" r="5" fill="white" style="fill:white;fill-opacity:1;"/>
+<circle opacity="75" cx="40" cy="50" r="5" fill="white" style="fill:white;fill-opacity:0.75;"/>
+<circle opacity="75" cx="59" cy="50" r="5" fill="white" style="fill:white;fill-opacity:0.75;"/>
+<circle opacity="50" cx="40" cy="69" r="5" fill="white" style="fill:white;fill-opacity:0.5;"/>
+<circle opacity="50" cx="59" cy="69" r="5" fill="white" style="fill:white;fill-opacity:0.5;"/>
 </svg>
