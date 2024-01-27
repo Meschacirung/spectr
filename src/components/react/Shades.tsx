@@ -37,8 +37,8 @@ function AppIcon({ mouseX, shade, intent }: { mouseX: MotionValue, shade:Shade, 
     return val - bounds.x - bounds.width / 2;
   });
 
-  let widthSync = useTransform(distance, [-60, 0, 60], [50, 60, 50]);
-  let width = useSpring(widthSync, { mass: 0.1, stiffness: 60, damping: 5 });
+  let widthSync = useTransform(distance, [-75, 0, 75], [50, 75, 50]);
+  let width = useSpring(widthSync, { mass: 0.1, stiffness: 75, damping: 10 });
 
   return (
     <motion.div
