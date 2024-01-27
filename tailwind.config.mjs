@@ -14,7 +14,7 @@ export default {
 	theme: {
 		extend: {
 			colors: ({ colors }) => ({
-				primary: colors.blue,
+				primary: colors.gray,
 				secondary: colors.purple,
 				accent : colors.pink,
 				success: colors.green,
@@ -32,7 +32,7 @@ export default {
 		themer({
 			// ... your themer config
 			background: "lighter",
-			border:"lighter",
+			border:"light",
 			radius: "smooth",
 			shadow: {
 				size: "md",
