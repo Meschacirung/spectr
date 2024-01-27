@@ -21,7 +21,7 @@ export default {
 				danger: colors.red,
 				warning: colors.yellow,
 				info: colors.blue,
-				gray : colors.slate,
+				gray : colors.zinc,
 				white: colors.white,
 				black: colors.black,
 				transparent: colors.transparent,

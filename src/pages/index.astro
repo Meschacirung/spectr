@@ -36,7 +36,7 @@ import {Button} from "./../components/react/DockButton";
 		</div>
 	</header>
 	<main class="relative overflow-y-auto snap-y snap-mandatory h-screen">
-		<div class="fixed z-50 bottom-8 inset-x-0 mx-auto w-fit">
+		<div class="fixed z-50 bottom-6 inset-x-0 mx-auto w-fit">
 			<OptionsDock client:idle />
 		</div>
 		<div class="relative z-10 snap-center flex justify-center items-center mx-px pt-56" id="home">
@@ -52,7 +52,7 @@ import {Button} from "./../components/react/DockButton";
 												<input class="opacity-0 size-0 appearance-none  p-0" type="color" id="color" name="color" style="-webkit-appearance:none;">
 											</label>
 											
-											<input class="h-8 px-3 py-1 border w-56 text-sm rounded-full hover:border-gray-300 dark:hover:border-gray-700 bg-transparent dark:border-gray-800 dark:text-white" placeholder="HEX" type="text" value="#000987">
+											<input class="h-8 px-3 py-1 border w-[calc(100%-2.5rem)] max-w-56 text-sm rounded-full hover:border-gray-300 dark:hover:border-gray-700 bg-transparent dark:border-gray-800 dark:text-white" placeholder="HEX" type="text" value="#000987">
 										</div>
 									</div>
 								</div>
@@ -89,6 +89,10 @@ import {Button} from "./../components/react/DockButton";
 				</div>
 			</div>
 		</div>
-		
 	</main>
+	<footer class="fixed bottom-6 inset-x-0 hidden md:block">
+		<div class="px-7 2xl:max-w-[92rem] w-full mx-auto text-sm text-gray-600 dark:text-gray-400">
+			<span>Built by <a href="" class="underline">Méschac Irung</a></span>
+		</div>
+	</footer>
 </Layout>
