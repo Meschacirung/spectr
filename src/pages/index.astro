@@ -7,7 +7,7 @@ import AppFooter from '../components/AppFooter.astro';
 ---
 
 <Layout title="Spectr">
-	<main class="relative overflow-y-auto snap-y snap-mandatory h-screen">
+	<main class="relative overflow-y-auto snap-y snap-mandatory h-screen scroll-smooth">
 		<div class="relative z-10 snap-center flex justify-center items-center min-h-screen dark:bg-gray-900/50" id="home">
 			<div class="space-y-6 h-fit my-auto">
 				<div class="space-y-6">
@@ -30,6 +30,15 @@ import AppFooter from '../components/AppFooter.astro';
 					</div>
 				</div>
 			</div>
+		</div>
+		<div class="relative z-10 snap-center flex justify-center items-center min-h-screen dark:bg-gray-900/50" id="tailus-ui">
+			<span>Tailus UI</span>
+		</div>
+		<div class="relative z-10 snap-center flex justify-center items-center min-h-screen dark:bg-gray-900/50" id="nuxt-ui">
+			<span>Nuxt UI</span>
+		</div>
+		<div class="relative z-10 snap-center flex justify-center items-center min-h-screen dark:bg-gray-900/50" id="shadcn-ui">
+			<span>ShadCn</span>
 		</div>
 		<div class="fixed z-50 bottom-6 inset-x-0 mx-auto w-fit">
 			<OptionsDock client:idle />
