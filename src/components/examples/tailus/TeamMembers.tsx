@@ -26,7 +26,7 @@ export default () => {
                                     size="lg"
                                     type="email"
                                         required
-                                        className="shadow-sm shadow-gray-950/5"
+                                        className="border-gray-200 hover:border-gray-300 dark:hover:border-gray-700 dark:border-gray-800 dark:bg-gray-950 shadow-sm shadow-gray-950/5"
                                     />
                             </Form.Control>
                             <Form.Message intent="warning" match="valueMissing">
@@ -76,7 +76,7 @@ const Member: React.FC<Person> = ({ img, name="", email, role, intent }) => {
                 <Avatar.Image src={img} width={120} height={120}></Avatar.Image>
                 <Avatar.Fallback>{initials}</Avatar.Fallback>
             </Avatar.Root>
-            <div className="w-[calc(100%-4rem)] py-2 group-last:pb-0 group-last:border-none border-b border-[--ui-light-border-color] dark:border-[--field-dark-border-color] flex gap-4 items-center">
+            <div className="w-[calc(100%-4rem)] py-2 group-last:pb-0 group-last:border-none border-b border-gray-200 dark:border-gray-800 flex gap-4 items-center">
                 <div className="w-2/3">
                     <HoverCard.Root>
                         <HoverCard.Trigger href="#" className="font-medium text-sm text-gray-900 dark:text-white hover:underline cursor-pointer">
@@ -93,7 +93,7 @@ const Member: React.FC<Person> = ({ img, name="", email, role, intent }) => {
                         {
                             role !== "Owner" ? (
                                 <Select.Root defaultValue={role}>
-                                    <Select.Trigger className="shadow-sm shadow-gray-950/5" size="xs" aria-label="role" placeholder="Select a role">
+                                    <Select.Trigger className="shadow-sm shadow-gray-950/5 border-gray-200 hover:border-gray-300 dark:border-gray-800 dark:hover:border-gray-700" size="xs" aria-label="role" placeholder="Select a role">
                                         <CaretSortIcon className="size-1.5 text-gray-500 dark:text-gray-500" />
                                     </Select.Trigger>
                                     <Select.Content sideOffset={6} avoidCollisions position="popper" align="center" className="relative z-10">

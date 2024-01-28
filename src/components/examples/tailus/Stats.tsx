@@ -49,9 +49,9 @@ export const StatsCard = ({ className = "", isNeutral = false }) => {
     return (
         <Card className={cn("w-full p-[--card-padding]",  className)} variant="mixed">
             <Tabs.Root variant="bottomIndicator" defaultValue={state} onValueChange={(value) => setState(value as TabsAppProps)}>
-                <Tabs.List className="overflow-x-auto sm:overflow-visible  mb-[--card-padding] border-b-0 gap-1 p-1 border rounded-lg">
-                    <Tabs.Indicator ref={spanRef} className="-top-px"/>
-                    <Tabs.Trigger className="min-w-max h-fit py-6 w-1/3 px-8 rounded text-left" value="total-orders" id="total-orders">
+                <Tabs.List className="overflow-x-auto sm:overflow-visible  mb-[--card-padding] border-b-0 gap-1 p-1 border border-gray-200 dark:border-gray-800 rounded-lg">
+                    <Tabs.Indicator ref={spanRef} className="-top-px bg-primary-600 dark:bg-primary-500"/>
+                    <Tabs.Trigger className="min-w-max h-fit py-6 w-1/3 px-8 rounded text-left hover:bg-gray-100 dark:hover:bg-gray-950/50" value="total-orders" id="total-orders">
                         <div>
                             <h3 className="text-gray-600 dark:text-gray-400 text-sm">Total Orders</h3>
                             <div className="mt-3 text-2xl flex gap-2 items-center font-medium text-gray-900 dark:text-white">
@@ -65,8 +65,8 @@ export const StatsCard = ({ className = "", isNeutral = false }) => {
                             </div>
                         </div>
                     </Tabs.Trigger>
-                    <span className="border-r -my-1 border-[--ui-light-border-color] dark:border-[--ui-dark-border-color]"></span>
-                    <Tabs.Trigger className="min-w-max h-fit py-6 w-1/3 px-8 rounded text-left" value="new-orders" id="new-orders">
+                    <span className="border-r -my-1 border-gray-200 dark:border-gray-800"></span>
+                    <Tabs.Trigger className="min-w-max h-fit py-6 w-1/3 px-8 rounded text-left hover:bg-gray-100 dark:hover:bg-gray-950/50" value="new-orders" id="new-orders">
                         <div>
                             <h3 className="text-gray-600 dark:text-gray-400 text-sm">New Orders</h3>
                             <div className="mt-3 text-2xl flex gap-2 items-center font-medium text-gray-900 dark:text-white">
@@ -80,8 +80,8 @@ export const StatsCard = ({ className = "", isNeutral = false }) => {
                             </div>
                         </div>
                     </Tabs.Trigger>
-                    <span className="border-r -my-1 border-[--ui-light-border-color] dark:border-[--ui-dark-border-color]"></span>
-                    <Tabs.Trigger className="min-w-max h-fit py-6 w-1/3 px-8 rounded text-left" value="conversions" id="conversions">
+                    <span className="border-r -my-1 border-gray-200 dark:border-gray-800"></span>
+                    <Tabs.Trigger className="min-w-max h-fit py-6 w-1/3 px-8 rounded text-left hover:bg-gray-100 dark:hover:bg-gray-950/50" value="conversions" id="conversions">
                         <div>
                             <h3 className="text-gray-600 dark:text-gray-400 text-sm">Conversions</h3>
                             <div className="mt-3 text-2xl flex gap-2 items-center font-medium text-gray-900 dark:text-white">

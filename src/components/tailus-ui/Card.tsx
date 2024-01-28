@@ -81,7 +81,7 @@ export const Card: React.FC<CardProps> = ({
   ...props
 }) => {
   const innerClass = variant === 'softGradient' ? 'innerSoft' : variant === 'elevatedGradient' ? 'innerElevated': null;
-  const classes = cn(cardVariants({ variant, padding, className }));
+  const classes = cn(cardVariants({ variant, padding, className }), "border-gray-200 dark:bg-gray-900 dark:border-gray-800");
   const innerGradient = cn(cardVariants({variant, className}))
   return (
     <>

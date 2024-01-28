@@ -13,6 +13,7 @@ export const FeedbackMessage = () => {
                             <Form.Input
                                 type="email"
                                 required
+                                className="border-gray-200 hover:border-gray-300 dark:hover:border-gray-700 dark:border-gray-800 dark:bg-gray-950 shadow-sm shadow-gray-950/5"
                             />
                         </Form.Control>
                         <Form.Message intent="warning" match="valueMissing">
@@ -28,6 +29,7 @@ export const FeedbackMessage = () => {
                             <Form.TextArea
                                 required
                                 rows={3}
+                                className="border-gray-200 hover:border-gray-300 dark:hover:border-gray-700 dark:border-gray-800 dark:bg-gray-950 shadow-sm shadow-gray-950/5"
                             />
                         </Form.Control>
                         <Form.Message intent="warning" match="valueMissing">

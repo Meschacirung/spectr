@@ -36,7 +36,7 @@ export function OptionsDock() {
     <motion.div
       onMouseMove={(e) => mouseX.set(e.pageX)}
       onMouseLeave={() => mouseX.set(Infinity)}
-      className="mx-auto flex h-[3.6rem] w-fit gap-1.5 ring-1 ring-gray-200 dark:ring-gray-900/50 items-end pb-1.5 px-1.5 border border-white/10 rounded-2xl shadow-md shadow-gray-950/5 bg-white/10 dark:bg-gray-900/25 backdrop-blur-2xl dark:border-white/10"
+      className="mx-auto flex h-[3.6rem] w-fit gap-1.5 ring-1 ring-gray-200 dark:ring-gray-900 items-end pb-1.5 px-1.5 border border-white/10 rounded-2xl shadow-md shadow-gray-950/5 bg-white/10 dark:bg-gray-900/25 backdrop-blur-2xl dark:border-white/10"
       >
           <AppIcon mouseX={mouseX} tooltip="Home" href="#home">
               <svg className="relative size-full duration-300 text-gray-950 dark:text-white transition group-active:scale-90" width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">

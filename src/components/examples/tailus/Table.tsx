@@ -57,7 +57,7 @@ export const Customers = () => {
                 <h3 className="text-xl font-medium text-gray-900 dark:text-white">New Customers</h3>
                 <span className="text-sm text-gray-500">More data about your customers from the last month</span>
           </div>  
-          <div className="min-w-max sm:min-w-full sm:w-full py-3 bg-gray-50 dark:bg-gray-950 px-4 gap-4 flex border rounded-lg border-[--ui-light-border-color] dark:border-[--ui-dark-border-color]">
+          <div className="min-w-max sm:min-w-full sm:w-full py-3 bg-gray-50 dark:bg-gray-950 px-4 gap-4 flex border rounded-lg border-gray-200 dark:border-gray-800">
             <Checkbox.Root id='all-users' className='shadow-none w-[1.125rem] h-[1.125rem] dark:before:shadow-gray-950/25' >
                 <Checkbox.Indicator>
                   <AnimatedCheckIcon />
@@ -77,7 +77,7 @@ export const Customers = () => {
             </div>
           </div>
         
-          <div className='min-w-max sm:min-w-full sm:w-full divide-y divide-[--ui-light-border-color] dark:divide-[--ui-dark-border-color]'>
+          <div className='min-w-max sm:min-w-full sm:w-full divide-y divide-gray-200 dark:divide-gray-800'>
               {customers.map((customer) => (
                 <div className="pl-4 items-center flex " key={customer.id}> 
                       <Checkbox.Root className='shadow-none w-[1.125rem] h-[1.125rem] dark:before:shadow-gray-950/25' id={customer.id.toString()}>

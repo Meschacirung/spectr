@@ -41,7 +41,7 @@ const DropdownMenuContent = React.forwardRef<
       <DropdownMenuPrimitive.Content
         {...props}
         ref={forwardedRef}
-        className={cn(theme.content, "z-[1000]", className)}
+        className={cn(theme.content, "z-[1000] border-gray-200 bg-white dark:bg-gray-900 dark:border-gray-800", className)}
       />
     </MenuContext.Provider>
   );

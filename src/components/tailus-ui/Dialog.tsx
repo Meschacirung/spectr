@@ -25,7 +25,7 @@ const DialogContent = React.forwardRef<
   <DialogPrimitive.Content
     {...props}
     ref={forwardedRef}
-    className={cn(dialogTheme.content, className)}
+    className={cn(dialogTheme.content, "border-gray-200 dark:bg-gray-900 dark:border-gray-800", className)}
   />
 ));
 

@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --colors-primary-50: 239 246 255;
+    --colors-primary-100: 219 234 254;
+    --colors-primary-200: 191 219 254;
+    --colors-primary-300: 147 197 253;
+    --colors-primary-400: 96 165 250;
+    --colors-primary-500: 59 130 246;
+    --colors-primary-600: 37 99 235;
+    --colors-primary-700: 29 78 216;
+    --colors-primary-800: 30 64 175;
+    --colors-primary-900: 30 58 138;
+    --colors-primary-950: 23 37 84;
+
+    --colors-secondary-50: 255 245 238;
+    --colors-secondary-100: 255 235 217;
+    --colors-secondary-200: 254 215 182;
+    --colors-secondary-300: 252 176 120;
+    --colors-secondary-400: 250 150 88;
+    --colors-secondary-500: 247 128 56;
+    --colors-secondary-600: 240 102 28;
+    --colors-secondary-700: 217 82 0;
+    --colors-secondary-800: 180 67 0;
+    --colors-secondary-900: 146 54 0;
+    --colors-secondary-950: 100 38 0;
+
+    --colors-accent-50: 245 243 255;
+    --colors-accent-100: 237 233 254;
+    --colors-accent-200: 221 214 254;
+    --colors-accent-300: 196 181 253;
+    --colors-accent-400: 167 139 250;
+    --colors-accent-500: 139 92 246;
+    --colors-accent-600: 124 58 237;
+    --colors-accent-700: 109 40 217;
+    --colors-accent-800: 91 33 182;
+    --colors-accent-900: 76 29 149;
+    --colors-accent-950: 46 16 101;
+
+    --colors-gray-50: 250 250 250;
+    --colors-gray-100: 244 244 245;
+    --colors-gray-200: 228 228 231;
+    --colors-gray-300: 212 212 216;
+    --colors-gray-400: 161 161 170;
+    --colors-gray-500: 113 113 122;
+    --colors-gray-600: 82 82 91;
+    --colors-gray-700: 63 63 70;
+    --colors-gray-800: 39 39 42;
+    --colors-gray-900: 24 24 27;
+    --colors-gray-950: 9 9 11;
+}

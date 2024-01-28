@@ -95,7 +95,7 @@ const SelectContent = React.forwardRef<
     <SelectPrimitive.Content
       {...props}
       ref={forwardedRef}
-      className={cn(theme.content, className)}
+      className={cn(theme.content, "border-gray-200 bg-white dark:bg-gray-900 dark:border-gray-800" ,className)}
     >
       <SelectScrollUpButton/>
       <SelectViewport>

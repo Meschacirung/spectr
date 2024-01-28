@@ -27,7 +27,7 @@ function CodePannel() {
           scaleX:1,
             opacity:1,
             transition: {
-                duration:0.3,
+                duration:0.4,
                 type: "spring",
                 bounce : 0.2,
                 delayChildren: 0.125,
@@ -48,9 +48,9 @@ function CodePannel() {
               <Tabs.Root variant="bottomIndicator" className="mt-[9px] flex flex-col" defaultValue={state} onValueChange={(value) => setState(value as TabsAppProps)}>
                   <Tabs.List
                       aria-label="stores" 
-                      className="w-[calc(100%-3rem)] relative z-[1] pt-2 -mt-2 px-4 ml-px bg-white/50 gap-2 -mb-[50px] rounded-t-xl dark:bg-gray-950/5 backdrop-blur-2xl"
+                      className="w-[calc(100%-3rem)] relative z-[1] pt-2 -mt-2 px-4 ml-px bg-white/50 gap-2 -mb-[50px] rounded-t-xl dark:bg-gray-950/5 backdrop-blur-2xl border-gray-200 dark:border-gray-800"
                   >
-                      <Tabs.Indicator indicator="outlined" className="transition-[width,left]" ref={spanRef}/>
+                      <Tabs.Indicator indicator="outlined" className="bg-primary-600 dark:bg-primary-500 transition-[width,left]" ref={spanRef}/>
                       <Tabs.Trigger className="text-sm text-gray-600 dark:text-gray-400 data-[state=active]:font-medium" value="tailus" id="tailus">TailusUI</Tabs.Trigger>
                       <Tabs.Trigger className="text-sm text-gray-600 dark:text-gray-400 data-[state=active]:font-medium" value="nuxt" id="nuxt">Nuxt UI</Tabs.Trigger>
                       <Tabs.Trigger className="text-sm text-gray-600 dark:text-gray-400 data-[state=active]:font-medium" value="shadcn" id="shadcn">ShadCn</Tabs.Trigger>

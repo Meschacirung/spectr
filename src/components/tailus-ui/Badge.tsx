@@ -33,7 +33,7 @@ const badgeVariants = cva([''], {
     },
     defaultVariants: {
         variant: 'outlined',
-        colorVariant: 'primary',
+        colorVariant: 'gray',
         size: 'md'
     }
   });
@@ -51,7 +51,8 @@ export const Badge: React.FC<BadgeProps> = ({
   }) => {
    
     const badgeUtilities = variantsMap[variant!][colorVariant!][size!]
-    const classes = cn(badgeUtilities, className);
+    const classes = cn(badgeUtilities, variant == "soft" && "bg-opacity-50", (variant == "soft" && colorVariant == "success") && "dark:bg-success-500/10 dark:text-success-400", (variant == "soft" && colorVariant == "info") && "dark:bg-info-500/10 dark:text-info-400", (variant == "soft" && colorVariant == "danger") && "dark:bg-danger-500/10 dark:text-danger-400", className);
+    
     return(
         <span  className={classes} {...props} role="badge">
             {children}
@@ -60,12 +61,9 @@ export const Badge: React.FC<BadgeProps> = ({
   }
 
 Badge.defaultProps = {
-  variant: "solid",
-  colorVariant: "danger",
-  size: "md"
+  variant: "soft",
+  colorVariant: "gray",
+  size: "sm",
 }
 
 export default Badge;
-
-
-
