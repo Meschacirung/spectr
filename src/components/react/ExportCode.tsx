@@ -21,7 +21,7 @@ function CodePannel() {
     }, [state]);
   
   const container = {
-        hidden: { y:250, scaleX:0.5, opacity:0},
+        hidden: { y:400, scaleX:0.5, opacity:0},
         show: {
           y: 0,
           scaleX:1,
@@ -52,9 +52,9 @@ function CodePannel() {
                       variant="soft"
                   >
                       <Tabs.Indicator indicator="outlined" className="shadow-sm shadow-gray-950/5 dark:bg-gray-800/50 rounded-lg transition-[width,left]" ref={spanRef}/>
-                      <Tabs.Trigger className="text-gray-600 dark:text-gray-400" value="tailus" id="tailus">TailusUI</Tabs.Trigger>
-                      <Tabs.Trigger className="text-gray-600 dark:text-gray-400" value="nuxt" id="nuxt">Nuxt UI</Tabs.Trigger>
-                      <Tabs.Trigger className="text-gray-600 dark:text-gray-400" value="shadcn" id="shadcn">ShadCn</Tabs.Trigger>
+                      <Tabs.Trigger className="text-sm text-gray-600 dark:text-gray-400" value="tailus" id="tailus">TailusUI</Tabs.Trigger>
+                      <Tabs.Trigger className="text-sm text-gray-600 dark:text-gray-400" value="nuxt" id="nuxt">Nuxt UI</Tabs.Trigger>
+                      <Tabs.Trigger className="text-sm text-gray-600 dark:text-gray-400" value="shadcn" id="shadcn">ShadCn</Tabs.Trigger>
                   </Tabs.List>
 
                   <Tabs.Content value="tailus">
@@ -73,6 +73,7 @@ function CodePannel() {
       black: colors.black,
       white: colors.white,
   }),`} />
+                      <a href="https://beta.tailus.io/docs/customization/palette/" target="_blank" className="p-3 mx-auto text-sm underline text-gray-700 hover:text-gray-950 dark:text-gray-300 dark:hover:text-white block w-fit">Color palette Guide</a>
                   </Tabs.Content>
                   <Tabs.Content value="nuxt">
                       <CodeSnippet code={`import type { Config } from 'tailwindcss'
@@ -99,6 +100,7 @@ function CodePannel() {
       }
     }
   }`} />
+                      <a href="https://ui.nuxt.com/getting-started/theming" target="_blank" className="p-3 mx-auto text-sm underline text-gray-700 hover:text-gray-950 dark:text-gray-300 dark:hover:text-white block w-fit">Theming Guide</a>
                   </Tabs.Content>
                   <Tabs.Content value="shadcn">
                       <CodeSnippet code={`@layer base {
@@ -147,6 +149,7 @@ function CodePannel() {
       --ring: 35.5 91.7% 32.9%;
     }
   }`} />
+                      <a href="https://ui.shadcn.com/docs/theming" target="_blank" className="p-3 mx-auto text-sm underline text-gray-700 hover:text-gray-950 dark:text-gray-300 dark:hover:text-white block w-fit">Themes Guide</a>
                   </Tabs.Content>
               </Tabs.Root>
         </motion.div>
