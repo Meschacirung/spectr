@@ -38,7 +38,7 @@ function CodePannel() {
 
   return (
       <>
-      {$isOpen && <div className="fixed inset-0 z-10 bg-white/50 backdrop-blur-[1px] dark:bg-gray-950/75 dark:backdrop-blur-[2px]" onClick={setIsOpen}></div>}
+      {$isOpen && <div className="fixed inset-0 z-10 bg-white/50 backdrop-blur-[1px] dark:bg-gray-950/0 dark:backdrop-blur-[2px]" onClick={setIsOpen}></div>}
         <motion.div
           initial="hidden"
           animate={$isOpen ? "show" : "hidden"}

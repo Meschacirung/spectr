@@ -38,7 +38,7 @@ export function OptionsDock() {
       onMouseLeave={() => mouseX.set(Infinity)}
       className="mx-auto flex h-[3.6rem] w-fit gap-1.5 ring-1 ring-gray-200 dark:ring-gray-900/50 items-end pb-1.5 px-1.5 border border-white/10 rounded-2xl shadow-md shadow-gray-950/5 bg-white/10 dark:bg-gray-900/25 backdrop-blur-2xl dark:border-white/10"
       >
-          <AppIcon mouseX={mouseX} tooltip="Home">
+          <AppIcon mouseX={mouseX} tooltip="Home" href="#home">
               <svg className="relative size-full transition duration-300 text-gray-950 dark:text-white" width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="40" cy="31" r="5" fill="currentColor"/>
                 <circle cx="59" cy="31" r="5" fill="currentColor"/>
@@ -49,17 +49,17 @@ export function OptionsDock() {
               </svg>
           </AppIcon>
           <span className="h-6 w-px  bg-gray-950/10 dark:bg-white/10 mx-2 -translate-y-2"></span>
-        <AppIcon mouseX={mouseX} tooltip="Tailus UI">
+        <AppIcon mouseX={mouseX} tooltip="Tailus UI" href="/#tailus-ui">
             <svg className="relative size-full text-gray-950 dark:text-white" width="32" height="32" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fillRule="evenodd" clipRule="evenodd" d="M84 42C84 65.196 65.196 84 42 84C18.804 84 0 65.196 0 42C0 18.804 18.804 0 42 0C65.196 0 84 18.804 84 42ZM9.48201 42C9.48201 59.9592 24.0408 74.518 42 74.518C59.9592 74.518 74.518 59.9592 74.518 42C74.518 24.0408 59.9592 9.48199 42 9.48199C24.0408 9.48199 9.48201 24.0408 9.48201 42ZM48.3697 26.2316C51.2872 26.2316 53.6523 28.5967 53.6523 31.5142C53.6523 34.4317 51.2872 36.7968 48.3697 36.7968C45.4522 36.7968 43.0871 34.4317 43.0871 31.5142C43.0871 28.5967 45.4522 26.2316 48.3697 26.2316ZM42.2543 36.7543C42.3875 36.7543 42.5195 36.7593 42.6502 36.769C43.691 37.9013 45.0637 38.7237 46.6141 39.0819C47.1736 39.9162 47.5 40.92 47.5 42C47.5 44.8971 45.1514 47.2457 42.2543 47.2457C39.3572 47.2457 37.0087 44.8971 37.0087 42C37.0087 39.1029 39.3572 36.7543 42.2543 36.7543ZM34.8047 39.7898C34.5971 40.4904 34.4857 41.2322 34.4857 42C34.4857 42.7679 34.5971 43.5097 34.8047 44.2102C33.969 46.0163 32.1408 47.2693 30.02 47.2693C27.1098 47.2693 24.7507 44.9102 24.7507 42C24.7507 39.0899 27.1098 36.7308 30.02 36.7308C32.1408 36.7308 33.969 37.9837 34.8047 39.7898ZM53.6445 52.4859C53.6445 49.5733 51.2834 47.2122 48.3708 47.2122C48.246 47.2122 48.1221 47.2165 47.9994 47.225C46.9472 48.3816 45.5507 49.2193 43.9718 49.5761C43.4191 50.4101 43.0971 51.4104 43.0971 52.4859C43.0971 55.3984 45.4583 57.7595 48.3708 57.7595C51.2834 57.7595 53.6445 55.3984 53.6445 52.4859ZM59.7461 42C59.7461 39.0938 57.3901 36.7378 54.4838 36.7378C54.3567 36.7378 54.2306 36.7423 54.1057 36.7512C53.0573 37.8988 51.6691 38.7307 50.1003 39.0877C49.9504 39.3129 49.8173 39.5503 49.703 39.7982C49.909 40.4962 50.0195 41.2352 50.0195 42C50.0195 42.7648 49.909 43.5038 49.703 44.2019C49.8173 44.4497 49.9504 44.6872 50.1003 44.9124C51.6691 45.2694 53.0573 46.1013 54.1057 47.2489C54.2306 47.2578 54.3567 47.2623 54.4838 47.2623C57.3901 47.2623 59.7461 44.9063 59.7461 42ZM40.9219 50.2755C40.7143 50.9761 40.6028 51.718 40.6028 52.4859C40.6028 53.2538 40.7143 53.9957 40.9219 54.6962C40.0861 56.503 38.2573 57.7564 36.1358 57.7564C33.225 57.7564 30.8653 55.3967 30.8653 52.4859C30.8653 51.4099 31.1877 50.4093 31.7411 49.5753C33.317 49.2184 34.7111 48.3823 35.7621 47.2284C35.8855 47.2197 36.0102 47.2153 36.1358 47.2153C36.2612 47.2153 36.3856 47.2197 36.5088 47.2283C37.56 48.3825 38.9544 49.2187 40.5306 49.5755C40.678 49.7976 40.809 50.0315 40.9219 50.2755ZM40.5094 34.4263C40.6608 34.1992 40.795 33.9595 40.9102 33.7094C40.705 33.0126 40.595 32.2752 40.595 31.5121C40.595 30.7489 40.705 30.0114 40.9102 29.3147C40.0777 27.5058 38.2492 26.25 36.1274 26.25C33.2213 26.25 30.8654 28.6059 30.8654 31.5121C30.8654 32.5894 31.1892 33.5912 31.7448 34.4254C33.3117 34.7828 34.6983 35.614 35.7457 36.7604C35.8718 36.7695 35.9991 36.7741 36.1274 36.7741C36.1921 36.7741 36.2564 36.7729 36.3204 36.7706C36.385 36.7683 36.4493 36.7648 36.5132 36.7602C37.5596 35.615 38.9445 34.7843 40.5094 34.4263Z" fill="currentColor"></path>
             </svg>
           </AppIcon>
-          <AppIcon mouseX={mouseX} tooltip="Nuxt UI">
+          <AppIcon mouseX={mouseX} tooltip="Nuxt UI" href="/#nuxt-ui">
               <svg className="relative size-full text-gray-950 dark:text-white" width="264" height="264" viewBox="0 0 264 264" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M146.496 211.2H234.822C237.627 211.2 240.383 210.468 242.813 209.078C245.242 207.688 247.259 205.688 248.662 203.279C250.064 200.871 250.801 198.139 250.8 195.359C250.799 192.579 250.059 189.847 248.655 187.44L189.337 85.612C187.935 83.2043 185.918 81.2049 183.489 79.8147C181.06 78.4246 178.305 77.6927 175.5 77.6927C172.695 77.6927 169.94 78.4246 167.511 79.8147C165.082 81.2049 163.065 83.2043 161.663 85.612L146.496 111.666L116.841 60.7179C115.438 58.3104 113.42 56.3113 110.991 54.9214C108.561 53.5315 105.805 52.7998 103 52.7998C100.195 52.7998 97.4386 53.5315 95.0089 54.9214C92.5793 56.3113 90.5615 58.3104 89.1583 60.7179L15.3453 187.44C13.9411 189.847 13.2012 192.579 13.2 195.359C13.1987 198.139 13.9363 200.871 15.3384 203.279C16.7405 205.688 18.7578 207.688 21.1873 209.078C23.6168 210.468 26.3728 211.2 29.1783 211.2H84.6219C106.589 211.2 122.789 201.636 133.937 182.979L161 136.526L175.496 111.666L219 186.34H161L146.496 211.2ZM83.7181 186.314L45.0255 186.306L103.026 86.7466L131.966 136.526L112.589 169.798C105.186 181.904 96.7763 186.314 83.7181 186.314Z" fill="currentColor"></path>
               </svg>
           </AppIcon>
-          <AppIcon mouseX={mouseX} tooltip="Shadcn">
+          <AppIcon mouseX={mouseX} tooltip="Shadcn" href="/#shadcn">
             <svg className="size-full relative text-gray-950 dark:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
                 <rect width="256" height="256" fill="none"></rect>
                 <line x1="208" y1="128" x2="128" y2="208" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="16"></line>
@@ -67,10 +67,10 @@ export function OptionsDock() {
             </svg>
       </AppIcon>
           <span className="h-6 w-px bg-gray-950/10 dark:bg-white/10 mx-2 -translate-y-2"></span>
-          <AppIcon mouseX={mouseX} tooltip="Code Source">
+          <AppIcon mouseX={mouseX} tooltip="Code Source" href="https://github.com/Meschacirung/spectr">
             <svg className="size-full relative text-gray-950 dark:text-white" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><g fill="currentColor"><path d="M208 104v8a48 48 0 0 1-48 48h-24a32 32 0 0 1 32 32v40h-64v-40a32 32 0 0 1 32-32h-24a48 48 0 0 1-48-48v-8a49.28 49.28 0 0 1 8.51-27.3A51.92 51.92 0 0 1 76 32a52 52 0 0 1 43.83 24h32.34A52 52 0 0 1 196 32a51.92 51.92 0 0 1 3.49 44.7A49.28 49.28 0 0 1 208 104" opacity={0.2}></path><path d="M208.3 75.68A59.74 59.74 0 0 0 202.93 28a8 8 0 0 0-6.93-4a59.75 59.75 0 0 0-48 24h-24a59.75 59.75 0 0 0-48-24a8 8 0 0 0-6.93 4a59.78 59.78 0 0 0-5.38 47.68A58.14 58.14 0 0 0 56 104v8a56.06 56.06 0 0 0 48.44 55.47A39.8 39.8 0 0 0 96 192v8H72a24 24 0 0 1-24-24a40 40 0 0 0-40-40a8 8 0 0 0 0 16a24 24 0 0 1 24 24a40 40 0 0 0 40 40h24v16a8 8 0 0 0 16 0v-40a24 24 0 0 1 48 0v40a8 8 0 0 0 16 0v-40a39.8 39.8 0 0 0-8.44-24.53A56.06 56.06 0 0 0 216 112v-8a58 58 0 0 0-7.7-28.32M200 112a40 40 0 0 1-40 40h-48a40 40 0 0 1-40-40v-8a41.74 41.74 0 0 1 6.9-22.48a8 8 0 0 0 1.1-7.69a43.81 43.81 0 0 1 .79-33.58a43.88 43.88 0 0 1 32.32 20.06a8 8 0 0 0 6.71 3.69h32.35a8 8 0 0 0 6.74-3.69a43.87 43.87 0 0 1 32.32-20.06a43.81 43.81 0 0 1 .77 33.58a8.09 8.09 0 0 0 1 7.65a41.76 41.76 0 0 1 7 22.52Z"></path></g></svg>
           </AppIcon>
-          <AppIcon mouseX={mouseX} tooltip="Follow on X">
+          <AppIcon mouseX={mouseX} tooltip="Follow on X" href="https://twitter.com/meschacirung">
           <svg className="size-full relative text-gray-950 dark:text-white" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
             <path fill="currentColor" d="M18.205 2.25h3.308l-7.227 8.26l8.502 11.24H16.13l-5.214-6.817L4.95 21.75H1.64l7.73-8.835L1.215 2.25H8.04l4.713 6.231zm-1.161 17.52h1.833L7.045 4.126H5.078z"></path>
           </svg>
@@ -110,14 +110,16 @@ export function OptionsDock() {
   );
 }
 
-interface AppIconProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-     mouseX: MotionValue;
+interface AppIconProps extends ButtonHTMLAttributes<HTMLButtonElement | HTMLAnchorElement> {
+    mouseX: MotionValue;
     children: React.ReactNode;
-    tooltip:string
+    tooltip: string,
+    href?:string,
 }
 
+const iconClasses = "aspect-square group w-10 p-2.5 overflow-hidden bg-white/50 backdrop-blur-xl flex items-center rounded-lg shadow shadow-gray-950/5 dark:shadow-inner dark:shadow-white/0 justify-center group relative before:absolute before:inset-0 before:rounded-[7px] before:border-t before:border-t-white dark:before:border-t-white/10 before:bg-gradient-to-b before:from-gray-50 dark:before:from-white/0 dark:ring ring-gray-50 border dark:ring-gray-950/5 dark:bg-gray-800 dark:border-gray-800 hover:before:from-gray-100 dark:hover:before:from-white/5"
 
-const AppIcon:React.FC<AppIconProps> = ({ mouseX, tooltip, children, ...props }) => {
+const AppIcon:React.FC<AppIconProps> = ({ mouseX, tooltip, href, children, ...props }) => {
   let ref = useRef<HTMLDivElement>(null);
 
   let distance = useTransform(mouseX, (val) => {
@@ -132,19 +134,33 @@ const AppIcon:React.FC<AppIconProps> = ({ mouseX, tooltip, children, ...props })
     return (
     <Tooltip.Provider>
         <Tooltip.Root delayDuration={50}>
-            <Tooltip.Trigger asChild>
+          <Tooltip.Trigger asChild>
+            {
+              href ? (
+                <motion.a
+                  ref={ref}
+                  href={href}
+                  style={{ width }}
+                  {...props}
+                  className={iconClasses}
+                >
+                  {children}
+                </motion.a>
+              ) : (
                 <motion.button
-                    ref={ref}
-                    style={{ width }}
-                    {...props}
-                    className={`aspect-square group w-10 p-2.5 overflow-hidden bg-white/50 backdrop-blur-xl flex items-center rounded-lg shadow shadow-gray-950/5 dark:shadow-inner dark:shadow-white/0 justify-center group relative before:absolute before:inset-0 before:rounded-[7px] before:border-t before:border-t-white dark:before:border-t-white/10 before:bg-gradient-to-b before:from-gray-50 dark:before:from-white/0 dark:ring ring-gray-50 border dark:ring-gray-950/5 dark:bg-gray-800 dark:border-gray-800 hover:before:from-gray-100 dark:hover:before:from-white/5`}
-            >
-                {children}
-                </motion.button>  
+                  ref={ref}
+                  style={{ width }}
+                  {...props}
+                  className={iconClasses}
+                >
+                  {children}
+                </motion.button>
+              )
+            }
             </Tooltip.Trigger>
-        <Tooltip.Portal>
-                    <Tooltip.Content sideOffset={6} className="relative z-50 text-xs px-2 py-1.5 border shadow shadow-gray-500/5 border-gray-950/10 dark:border-white/10 rounded-lg text-gray-950 dark:text-white bg-white/75 dark:bg-gray-800/50 backdrop-blur-2xl">
-                        {tooltip}
+            <Tooltip.Portal>
+            <Tooltip.Content sideOffset={6} className="relative z-50 text-xs px-2 py-1.5 border shadow shadow-gray-500/5 border-gray-950/10 dark:border-white/10 rounded-lg text-gray-950 dark:text-white bg-white/75 dark:bg-gray-800/50 backdrop-blur-2xl">
+              {tooltip}
             </Tooltip.Content>
         </Tooltip.Portal>
         </Tooltip.Root>
