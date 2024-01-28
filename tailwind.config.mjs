@@ -1,5 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 import themer from '@tailus/themer'
+
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 export default {
 	content: [
 		'./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
@@ -26,6 +29,10 @@ export default {
 				black: colors.black,
 				transparent: colors.transparent,
 			}),
+			fontFamily: {
+				sans: ['Geist', 'Inter', ...defaultTheme.fontFamily.sans],
+				mono : ['GeistMono', 'fira-code', ...defaultTheme.fontFamily.mono],
+			},
 		},
 	},
 	plugins: [
