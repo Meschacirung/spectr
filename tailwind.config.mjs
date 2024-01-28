@@ -14,7 +14,7 @@ export default {
 	theme: {
 		extend: {
 			colors: ({ colors }) => ({
-				primary: colors.fuchsia,
+				primary: colors.blue,
 				secondary: colors.purple,
 				accent : colors.pink,
 				success: colors.green,
