@@ -4,6 +4,7 @@ import {Shades} from "./../components/react/Shades";
 import {OptionsDock} from "./../components/react/OptionsDock";
 import ColorForm from '../components/ColorForm.astro';
 import AppFooter from '../components/AppFooter.astro';
+import TailusExample from "../components/examples/TailusExample";
 ---
 
 <Layout title="Spectr">
@@ -31,8 +32,8 @@ import AppFooter from '../components/AppFooter.astro';
 				</div>
 			</div>
 		</div>
-		<div class="relative z-10 snap-center flex justify-center items-center min-h-screen dark:bg-gray-900/50" id="tailus-ui">
-			<span>Tailus UI</span>
+		<div class="px-7 2xl:max-w-[92rem] w-full mx-auto relative z-10 snap-center py-16 min-h-screen dark:bg-gray-900/50" id="tailus-ui">
+			<TailusExample client:visible />
 		</div>
 		<div class="relative z-10 snap-center flex justify-center items-center min-h-screen dark:bg-gray-900/50" id="nuxt-ui">
 			<span>Nuxt UI</span>
