@@ -19,7 +19,7 @@ export function Shades({color}:{color:Color}) {
     <motion.div
       onMouseMove={(e) => mouseX.set(e.pageX)}
       onMouseLeave={() => mouseX.set(Infinity)}
-      className="mx-auto flex h-12 w-fit items-end gap-1"
+      className="mx-auto flex h-[3.85rem] w-fit items-end gap-1"
     >
       {shades.map((shade) => (
         <AppIcon intent={color} shade={shade} mouseX={mouseX} key={shade} />
@@ -37,7 +37,7 @@ function AppIcon({ mouseX, shade, intent }: { mouseX: MotionValue, shade:Shade, 
     return val - bounds.x - bounds.width / 2;
   });
 
-  let widthSync = useTransform(distance, [-75, 0, 75], [50, 75, 50]);
+  let widthSync = useTransform(distance, [-75, 0, 75], [60, 75, 60]);
   let width = useSpring(widthSync, { mass: 0.1, stiffness: 75, damping: 10 });
 
   return (
