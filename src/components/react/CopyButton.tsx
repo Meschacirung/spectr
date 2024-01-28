@@ -29,12 +29,12 @@ const CodeCopyButton: React.FC<CodeCopyButtonProps> = ({
             icon="only"
             label="Copy code"
             onClick={copyCode}
-            className={cn("focus:before:!bg-gray-950/5 dark:focus:before:bg-white/5", className)}
+            className={cn("relative rounded-lg before:rounded-lg z-50 hover:before:bg-gray-100 focus:before:!bg-gray-950/5 dark:focus:before:bg-white/5", className)}
         >
             {
                 copied ?
-                    <CheckIcon /> :
-                    <ClipboardCopyIcon />
+                    <CheckIcon className="text-gray-950 dark:text-white" /> :
+                    <ClipboardCopyIcon className="text-gray-950 dark:text-white" />
             }
         </Button>
     )

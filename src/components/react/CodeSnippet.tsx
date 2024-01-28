@@ -25,14 +25,14 @@ export const CodeSnippet: React.FC<CodeSnippetProps> = ({
     }, [code]);
 
     return (
-        <div className={cn("aspect-[16/12] relative overflow-hidden group/snippet rounded-lg shadow shadow-gray-950/5 dark:border dark:border-gray-800 bg-white dark:bg-gray-800/50 dark:backdrop-blur-3xl", className)}>
+        <div className={cn("aspect-[16/12] relative overflow-hidden group/snippet rounded-xl shadow shadow-gray-950/10 dark:border dark:border-gray-800 bg-white dark:bg-gray-800/50 dark:backdrop-blur-3xl", className)}>
             <div className="absolute right-1 top-1">
                 <CodeCopyButton
                     code={code}
                 />
             </div>
             <pre className={`overflow-auto h-full text-sm pt-6 pb-5 px-6`}>
-                <code className="language-js font-mono text-sm">
+                <code className="language-js font-mono text-[13px]">
                     {code}
                 </code>
             </pre>

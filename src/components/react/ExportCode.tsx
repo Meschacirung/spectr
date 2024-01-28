@@ -27,7 +27,7 @@ function CodePannel() {
           scaleX:1,
             opacity:1,
             transition: {
-                duration:0.5,
+                duration:0.3,
                 type: "spring",
                 bounce : 0.2,
                 delayChildren: 0.125,
@@ -44,21 +44,22 @@ function CodePannel() {
           animate={$isOpen ? "show" : "hidden"}
           exit={"hidden"}
           variants={container}
-          className="fixed mx-auto inset-x-0 z-10 bottom-24 max-w-xl h-fit w-full rounded-2xl p-2 transition-[height] duration-300 bg-gray-50 ring-1 ring-gray-200 dark:ring-gray-900 border border-white shadow-md shadow-gray-950/5 dark:shadow-gray-950/50 dark:bg-gray-950/50 backdrop-blur-2xl dark:border-white/10">
-              <Tabs.Root className="-mt-2 flex flex-col" defaultValue={state} onValueChange={(value) => setState(value as TabsAppProps)}>
+          className="fixed mx-auto inset-x-0 z-10 bottom-24 max-w-lg h-fit w-full rounded-2xl p-1 transition-[height] duration-300 bg-gray-50 ring-1 ring-gray-200 dark:ring-gray-900 border border-white shadow-md shadow-gray-950/5 dark:shadow-gray-950/50 dark:bg-gray-950/50 backdrop-blur-2xl dark:border-white/10">
+              <Tabs.Root variant="bottomIndicator" className="mt-[9px] flex flex-col" defaultValue={state} onValueChange={(value) => setState(value as TabsAppProps)}>
                   <Tabs.List
                       aria-label="stores" 
-                      className="w-fit p-0 my-1 dark:bg-transparent"
-                      variant="soft"
+                      className="w-[calc(100%-3rem)] relative z-[1] pt-2 -mt-2 px-4 ml-px bg-white/50 gap-2 -mb-[50px] rounded-t-xl dark:bg-gray-950/5 backdrop-blur-2xl"
                   >
-                      <Tabs.Indicator indicator="outlined" className="shadow-sm shadow-gray-950/5 dark:bg-gray-800/50 rounded-lg transition-[width,left]" ref={spanRef}/>
-                      <Tabs.Trigger className="text-sm text-gray-600 dark:text-gray-400" value="tailus" id="tailus">TailusUI</Tabs.Trigger>
-                      <Tabs.Trigger className="text-sm text-gray-600 dark:text-gray-400" value="nuxt" id="nuxt">Nuxt UI</Tabs.Trigger>
-                      <Tabs.Trigger className="text-sm text-gray-600 dark:text-gray-400" value="shadcn" id="shadcn">ShadCn</Tabs.Trigger>
+                      <Tabs.Indicator indicator="outlined" className="transition-[width,left]" ref={spanRef}/>
+                      <Tabs.Trigger className="text-sm text-gray-600 dark:text-gray-400 data-[state=active]:font-medium" value="tailus" id="tailus">TailusUI</Tabs.Trigger>
+                      <Tabs.Trigger className="text-sm text-gray-600 dark:text-gray-400 data-[state=active]:font-medium" value="nuxt" id="nuxt">Nuxt UI</Tabs.Trigger>
+                      <Tabs.Trigger className="text-sm text-gray-600 dark:text-gray-400 data-[state=active]:font-medium" value="shadcn" id="shadcn">ShadCn</Tabs.Trigger>
                   </Tabs.List>
 
                   <Tabs.Content value="tailus">
-                      <CodeSnippet code={`colors: ({ colors }) => ({
+            <CodeSnippet code={`
+                      
+colors: ({ colors }) => ({
       inherit: colors.inherit,
       current: colors.current,
       transparent: colors.transparent,
@@ -76,10 +77,12 @@ function CodePannel() {
                       <a href="https://beta.tailus.io/docs/customization/palette/" target="_blank" className="p-3 mx-auto text-sm underline text-gray-700 hover:text-gray-950 dark:text-gray-300 dark:hover:text-white block w-fit">Color palette Guide</a>
                   </Tabs.Content>
                   <Tabs.Content value="nuxt">
-                      <CodeSnippet code={`import type { Config } from 'tailwindcss'
-  import defaultTheme from 'tailwindcss/defaultTheme'
+            <CodeSnippet code={`
+                      
+import type { Config } from 'tailwindcss'
+import defaultTheme from 'tailwindcss/defaultTheme'
 
-  export default <Partial<Config>>{
+export default <Partial<Config>>{
     theme: {
       extend: {
         colors: {
@@ -99,11 +102,13 @@ function CodePannel() {
         }
       }
     }
-  }`} />
+}`} />
                       <a href="https://ui.nuxt.com/getting-started/theming" target="_blank" className="p-3 mx-auto text-sm underline text-gray-700 hover:text-gray-950 dark:text-gray-300 dark:hover:text-white block w-fit">Theming Guide</a>
                   </Tabs.Content>
                   <Tabs.Content value="shadcn">
-                      <CodeSnippet code={`@layer base {
+            <CodeSnippet code={`
+
+@layer base {
     :root {
       --background: 0 0% 100%;
       --foreground: 20 14.3% 4.1%;
