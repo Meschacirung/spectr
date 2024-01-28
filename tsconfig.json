@@ -8,7 +8,8 @@
       "@components/*": ["src/components/*"],
       "@assets/*": ["src/assets/*"],
       "@lib/*": ["src/lib/*"],
-      "@tailus-ui/*": ["src/components/tailus-ui/*"]
+      "@tailus-ui/*": ["src/components/tailus-ui/*"],
+      "@store/*": ["src/store/*"]
     }
   }
 }
